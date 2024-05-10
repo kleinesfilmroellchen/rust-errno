@@ -23,6 +23,7 @@
 #[cfg_attr(windows, path = "windows.rs")]
 #[cfg_attr(target_os = "wasi", path = "wasi.rs")]
 #[cfg_attr(target_os = "hermit", path = "hermit.rs")]
+#[cfg_attr(target_arch = "wasm32", path = "wasm.rs")]
 mod sys;
 
 use core::fmt;
